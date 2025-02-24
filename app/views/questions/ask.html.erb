@@ -1,0 +1,9 @@
+
+<div class="container text-center">
+  <h1 class="my-4">Stupid Coaching</h1>
+  <p>Ask your coach anything:</p>
+  <%= form_tag answer_path, method: :get, class: "d-flex justify-content-center" do %>
+    <%= text_field_tag :question, nil, class: "form-control me-2", placeholder: "Type your question..." %>
+    <%= submit_tag "Ask", class: "btn btn-primary" %>
+  <% end %>
+</div>
